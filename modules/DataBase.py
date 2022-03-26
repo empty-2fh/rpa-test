@@ -20,7 +20,7 @@ class DataBase:
 
         # Nombre de la BD
 
-        self.__db_name = 'DenkoApi';
+        self.__db_name = 'DonkiApi';
 
         # Cadena de conexión
 

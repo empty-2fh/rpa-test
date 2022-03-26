@@ -7,7 +7,7 @@ if ( __name__ == '__main__' ): exit();
 
 import requests;
 
-class DenkoApi:
+class DonkiApi:
 
     def __init__( self ):
 

@@ -6,7 +6,7 @@
 import argparse
 from datetime import datetime, date
 
-from modules.DenkoApi import DenkoApi
+from modules.DonkiApi import DonkiApi
 from modules.Colors import Colors
 from modules.Layouts import Layouts
 from modules.Banner import Banner
@@ -83,7 +83,6 @@ def main():
     # Argumentos
 
     parser = consoleArgs();
-
     args = parser.parse_args();
 
     if ( ( not args.historic ) and ( not args.endpoint ) ): 
@@ -96,15 +95,15 @@ def main():
 
     db = DataBase();
 
-    denki_db = db.connect();
+    donki_db = db.connect();
 
     # Especificar colección de la BD
 
-    historic = denki_db[ 'Historial' ];
+    historic = donki_db[ 'Historial' ];
 
-    # Instancia de la clase DenkiApi
+    # Instancia de la clase DonkiApi
 
-    api = DenkoApi();
+    api = DonkiApi();
 
     # Mostrar historial de peticiones
 

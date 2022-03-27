@@ -101,9 +101,8 @@ class Layouts:
                     
                 { 
                     
-                    'gstID' : obj[ 'gstID' ], 
-                    'startTime' : obj[ 'startTime' ],
-                    'observedTime' : obj[ 'allKpIndex' ][ 0 ][ 'observedTime' ],
+                    'gstID' : obj[ 'mpcID' ], 
+                    'startTime' : obj[ 'eventTime' ],
                     'link' : obj[ 'link' ]
 
                 } );
